@@ -1,0 +1,35 @@
+nav
+    div.container.mx-auto
+        a(href="/")
+            div.brand
+                span.is-size-10.has-text-weight-semibold= siteTitle
+        div.menu
+            - if(authenticated)
+                a(href="/b/accounts") Accounts
+                a(href="/b/transfer") Transfer
+            //- a(href="/c/fraud") Fraud
+            a(href="/c/contact") Contact
+            - if(authenticated)
+                a(href="/a/logout") Logout
+                    span.tag= username.split('.').join(' ')
+            - else
+                a(href="/") Login
+
+style.
+    .navbar {
+        background-color: blue;
+    }
+    .navbar .navbar-brand {
+        display: flex;
+        margin-left: 0 !important;
+
+    }
+
+    .navbar .navbar-brand span {
+        margin: auto 0;
+    }
+
+    .navbar .navbar-end span.tag {
+        margin-left: .5em;
+        text-transform: capitalize;
+    }

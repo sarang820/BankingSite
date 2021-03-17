@@ -1,0 +1,28 @@
+{
+    "name": "bankboga",
+    "version": "1.0.0",
+    "main": "server.js",
+    "license": "MS-PL",
+    "private": false,
+    "scripts": {
+        "start": "nodemon node server.js"
+    },
+    "dependencies": {
+        "@tailwindcss/postcss7-compat": "^2.0.3",
+        "autoprefixer": "^9.8.6",
+        "body-parser": "^1.19.0",
+        "cookie-parser": "^1.4.4",
+        "ejs": "^2.6.2",
+        "express": "^4.17.1",
+        "nodemon": "^1.19.1",
+        "postcss": "^7.0.35",
+        "postcss-import": "^12.0.1",
+        "postcss-middleware": "^1.1.4",
+        "postcss-nested": "^4.1.2",
+        "pug": "^2.0.4",
+        "tabulator-tables": "^4.9.3",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
+    },
+    "repository": "https://github.com/hadenpf/bankboga.git",
+    "author": "hadenpf"
+}
